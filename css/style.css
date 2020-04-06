@@ -10,6 +10,7 @@ body{
     width: 10rem;
     height: 15rem;
     perspective: 1000px; 
+    backface-visibility: hidden;
 }
 
   .game-card.isFlipped {
@@ -57,3 +58,25 @@ body{
   .faded {
     opacity: 0.5;
   }
+
+@media screen and (max-width: 767px){
+  .game-card{
+    width: 6rem;
+    height: 9rem;
+  }
+
+  .cardFace{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 426px){
+  .game-card{
+    width: 4rem;
+    height: 6rem;
+  }
+
+  .cardFace{
+    font-size: 2rem;
+  }
+}
