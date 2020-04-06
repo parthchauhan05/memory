@@ -29,7 +29,7 @@ openCard = null
 move = 0
 score = 0
 
-shuffle(cardIcons)
+cardIcons = shuffle(cardIcons)
 
 $("button#easy").on('click', function(e) {
   e.preventDefault();
