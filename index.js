@@ -29,6 +29,8 @@ openCard = null
 move = 0
 score = 0
 
+shuffle(cardIcons)
+
 $("button#easy").on('click', function(e) {
   e.preventDefault();
   $(this).toggleClass("fadeOut fadeIn")
