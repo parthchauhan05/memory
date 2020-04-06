@@ -29,6 +29,8 @@ openCard = null
 move = 0
 score = 0
 
+cardIcons = shuffle(cardIcons)
+
 $("button#easy").on('click', function(e) {
   e.preventDefault();
   $(this).toggleClass("fadeOut fadeIn")
@@ -69,6 +71,7 @@ $("button#easy").on('click', function(e) {
             currentCard = null
             score++
             if(score==3){
+              $('p.result').append(`Congratulation! You won in ${move} moves.`)
               $('#end').css('position', 'absolute')
               $('#end').removeClass("hidden")
             }
@@ -129,6 +132,7 @@ $("button#medium").on('click', function(e) {
             currentCard = null
             score++
             if(score==4){
+              $('p.result').append(`Congratulation! You won in ${move} moves.`)
               $('#end').css('position', 'absolute')
               $('#end').removeClass("hidden")
             }
@@ -189,6 +193,7 @@ $("button#hard").on('click', function(e) {
             currentCard = null
             score++
             if(score==6){
+              $('p.result').append(`Congratulation! You won in ${move} moves.`)
               $('#end').css('position', 'absolute')
               $('#end').removeClass("hidden")
             }
